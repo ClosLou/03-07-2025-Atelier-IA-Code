@@ -16,14 +16,6 @@ PROMPTS À COPIER-COLLER DANS COPILOT CHAT :
 2. CHANGEMENT DE LIBRAIRIE AVEC GESTION D'AFFICHAGE :
 "Peux-tu remplacer la visualisation Matplotlib/Seaborn par un graphique interactif avec Plotly ? Assure-toi d'inclure à la fois fig.show() et fig.write_html('graph.html') pour garantir l'affichage"
 
-
-PROMPTS BONUS :
-==============
-"Ajoute une analyse statistique pour comparer les groupes control vs treatment"
-"Crée un dashboard avec plusieurs graphiques pour explorer toutes les variables"
-"Peux-tu refactoriser ce code en utilisant des fonctions pour le rendre plus modulaire ?"
-"Ajoute des docstrings et des commentaires détaillés à ce code"
-
 DONNÉES : data.csv 
 - Colonnes : sample, condition (control/treatment), gene_A, gene_B, gene_C
 
