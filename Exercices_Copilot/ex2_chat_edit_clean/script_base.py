@@ -35,12 +35,14 @@ INSTRUCTIONS :
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import os
 
 # Script de départ pour l'exercice 2
 # TODO: Utiliser Copilot Chat pour améliorer ce code
 
-# 1. Charger les données
-df = pd.read_csv('data.csv')
+# 1. Charger les données avec gestion des chemins
+data_file = os.path.join(os.path.dirname(__file__), 'data.csv')
+df = pd.read_csv(data_file)
 
 # 2. Visualisation simple avec Matplotlib/Seaborn
 plt.figure(figsize=(10, 6))
