@@ -1,0 +1,11 @@
+# Requirements for Exercise 1: Autocomplétion Plot Violin
+# =======================================================
+
+# Core data manipulation
+pandas>=1.5.0
+
+# Data visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Note: 'os' is a built-in Python module, no installation required

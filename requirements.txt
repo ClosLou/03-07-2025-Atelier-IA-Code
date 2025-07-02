@@ -1,0 +1,25 @@
+# Requirements for GitHub Copilot Workshop Exercises
+# ================================================
+# This file contains all dependencies needed for the three exercises
+
+# Core data manipulation and analysis
+pandas>=1.5.0
+numpy>=1.21.0
+
+# Data visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.0.0
+
+# Machine learning and preprocessing
+scikit-learn>=1.1.0
+
+# Web application framework (for Exercise 3)
+streamlit>=1.25.0
+
+# Additional utilities
+# (os is built-in, no need to install)
+
+# Optional: Jupyter support for notebook exercises
+jupyter>=1.0.0
+ipykernel>=6.15.0
