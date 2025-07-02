@@ -2,17 +2,20 @@
 Exercice 2 : Chat et édition de code avec GitHub Copilot
 ======================================================
 
+PRÉREQUIS D'INSTALLATION :
+========================
+Avant de commencer, installez les librairies nécessaires :
+pip install pandas plotly scikit-learn matplotlib seaborn
+
 PROMPTS À COPIER-COLLER DANS COPILOT CHAT :
 ==========================================
 
 1. NORMALISATION DES DONNÉES :
 "En utilisant scikit-learn, peux-tu ajouter une étape de normalisation Z-score sur les colonnes numériques avec StandardScaler avant la visualisation ?"
 
-2. CHANGEMENT DE LIBRAIRIE :
-"Peux-tu remplacer la visualisation Matplotlib/Seaborn par un graphique interactif avec Plotly ?"
+2. CHANGEMENT DE LIBRAIRIE AVEC GESTION D'AFFICHAGE :
+"Peux-tu remplacer la visualisation Matplotlib/Seaborn par un graphique interactif avec Plotly ? Assure-toi d'inclure à la fois fig.show() et fig.write_html('graph.html') pour garantir l'affichage"
 
-3. SAUVEGARDE DU GRAPHIQUE :
-"Comment puis-je sauvegarder ce graphique Plotly dans un fichier HTML nommé 'graph.html' ?"
 
 PROMPTS BONUS :
 ==============
@@ -24,12 +27,19 @@ PROMPTS BONUS :
 DONNÉES : data.csv 
 - Colonnes : sample, condition (control/treatment), gene_A, gene_B, gene_C
 
-INSTRUCTIONS :
-1. Ouvrez Copilot Chat (icône chat ou Ctrl+Shift+I)
-2. Sélectionnez le code concerné avant chaque demande
-3. Copiez-collez les prompts ci-dessus un par un
-4. Appliquez les modifications suggérées
-5. Testez le code après chaque changement
+INSTRUCTIONS DÉTAILLÉES :
+=======================
+1. Vérifiez que toutes les librairies sont installées
+2. Ouvrez Copilot Chat (icône chat ou Ctrl+Shift+I)
+3. Sélectionnez le code concerné avant chaque demande
+4. Copiez-collez les prompts ci-dessus un par un (dans l'ordre)
+5. Appliquez les modifications suggérées
+6. Testez le code après chaque changement
+7. Si Plotly ne s'affiche pas : vérifiez le fichier graph.html généré
+
+DÉPANNAGE PLOTLY :
+================
+- Si le graphique ne s'affiche pas dans VS Code ouvrez graph.html dans votre navigateur
 """
 
 import pandas as pd
